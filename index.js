@@ -19,7 +19,6 @@ const duraçãoDoCurso = 30 //number
 const certificado = true //boolean
 
 
-
 //2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. 
 //Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
 
@@ -52,13 +51,10 @@ const checarAvaliação = avaliação1 && avaliação2 && avaliação3 && avalia
 console.log(checarAvaliação)
 
 
-
 //5. Crie pelo menos mais uma característica para o item que você criou. 
 //Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
 
 const dadosDoUsuário = ["Nome do Aluno", "Idade", "Email"] 
-
-
 
 
 //6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
@@ -69,26 +65,3 @@ console.log(`O Módulo 02: ${módulo2.toUpperCase()} \nCarga Horária: ${cargaHo
 console.log(`O Módulo 03: ${módulo3.toUpperCase()} \nCarga Horária: ${cargaHorária3}\nconcluído: ${avaliação3}`)
 console.log(`O Módulo 04: ${módulo4.toUpperCase()} \nCarga Horária: ${cargaHorária4}\nconcluído: ${avaliação4}`)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
