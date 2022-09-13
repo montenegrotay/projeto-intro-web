@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //  SEMANA 1
 //Curso de Reciclagem para Condutores Infratores
 //Informação
@@ -71,6 +72,9 @@ console.log(`O Módulo 04: ${módulo4.toUpperCase()} \nCarga Horária: ${cargaHo
 
 
 //   SEMANA 2
+=======
+// SEMANA 02
+>>>>>>> e4b5e0b50355c3e13ba9e3c7d2a6baa3fd3efc2a
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 
 const objeto1 = {
@@ -110,18 +114,18 @@ todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4)
 
 
 //4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
-//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push.
 
+//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push.
 
 
 if(checarAvaliação == true) {
    console.log("Você foi Aprovado!", todosOsObjetos.push())
    /*Se todas as avaliações forem true, o usuário foi aprovado*/
-}
- else if (checarAvaliação == false){
+} else if (checarAvaliação == false) {
    console.log(alert("Você foi reprovado, refaça suas avaliações!"))
    /*Se alguma avaliação for false, o usuário está reprovado*/
 }
+<<<<<<< HEAD
 
 
 // SEMANA 3
@@ -157,3 +161,5 @@ if(checarAvaliação == true) {
 
 
 //4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+=======
+>>>>>>> e4b5e0b50355c3e13ba9e3c7d2a6baa3fd3efc2a
