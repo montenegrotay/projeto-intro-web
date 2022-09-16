@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //  SEMANA 1
 //Curso de Reciclagem para Condutores Infratores
 //Informação
@@ -9,7 +8,8 @@
 
 
 
-//1. Para o item que você decidiu, pense nas características que são importantes para construí-lo. Vamos usar estas características para definir exemplos destes objetos usando o código.
+//1. Para o item que você decidiu, pense nas características que são importantes para construí-lo.
+//Vamos usar estas características para definir exemplos destes objetos usando o código.
 //Você precisará criar pelo menos:
 //  * uma característica String;
 //  * uma característica Number;
@@ -40,6 +40,7 @@ const módulo4 = "Relacionamento Interpessoal" //string
 const cargaHorária4 = 6 //number
 const avaliação4 = true //boolean
 
+
 //3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
 //A média deve ser igual à soma dos itens, dividida pelo total de itens.
 
@@ -53,13 +54,10 @@ const checarAvaliação = avaliação1 && avaliação2 && avaliação3 && avalia
 console.log(checarAvaliação)
 
 
-
 //5. Crie pelo menos mais uma característica para o item que você criou. 
 //Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
 
-const dadosDoUsuário = ["Nome do Aluno", "Idade", "Email"] 
-
-
+const dadosDoUsuário = ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 
 
 //6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
@@ -71,10 +69,7 @@ console.log(`O Módulo 03: ${módulo3.toUpperCase()} \nCarga Horária: ${cargaHo
 console.log(`O Módulo 04: ${módulo4.toUpperCase()} \nCarga Horária: ${cargaHorária4}\nconcluído: ${avaliação4}`)
 
 
-//   SEMANA 2
-=======
 // SEMANA 02
->>>>>>> e4b5e0b50355c3e13ba9e3c7d2a6baa3fd3efc2a
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 
 const objeto1 = {
@@ -101,6 +96,11 @@ const objeto4 = {
  avaliação4: true
 }
 
+
+const objeto5 = {
+   dadosDoUsuário: ["Nome do Aluno", "Idade", "E-mail", "Data de Nascimento"],
+}
+
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 
 const todosOsObjetos = []
@@ -108,7 +108,7 @@ console.log(todosOsObjetos)
 
 //3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
 
-todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4)
+todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4, objeto5)
    
 //console.log(todosOsObjetos)
 
@@ -125,11 +125,15 @@ if(checarAvaliação == true) {
    console.log(alert("Você foi reprovado, refaça suas avaliações!"))
    /*Se alguma avaliação for false, o usuário está reprovado*/
 }
-<<<<<<< HEAD
 
 
-// SEMANA 3
-//1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, altere a forma que a característica de array dos itens seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
+// SEMANA 03
+//1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2,
+//altere a forma que a característica de array dos itens
+//seja escrita como um laço
+//que guarde todos os valores da propriedade array do objeto
+//em uma mesma string. 
+//Utilize esta string no relatório.
 //💡 Chamamos este processo de reescrever um código já escrito, de refatoração.
 //Exemplo:
 
@@ -140,11 +144,27 @@ if(checarAvaliação == true) {
 //projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"] 
 
 //DEPOIS
-//FULANO
+//FULANO 
 //idade: 33
 //verificou email?: false
 //projetos: "Projeto de HTML,Projeto de CSS,Projeto React" 
 
+
+
+todosOsObjetos
+
+
+function informaçõesDoCurso (todosOsObjetos) {
+   for(let elemento of todosOsObjetos) {
+      todosOsObjetos['dadosDoUsuário'] = dadosDoUsuário.join(', ')
+   }
+   
+   return dadosDoUsuário
+   
+}
+informaçõesDoCurso(todosOsObjetos)
+console.log(todosOsObjetos[4].dadosDoUsuário.join(', '))
+//alterando a array dadosDoUsuário para uma String
 
 //2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 //ANTES 
@@ -157,9 +177,14 @@ if(checarAvaliação == true) {
 //}
 
 
+for(let elemento in todosOsObjetos){
+   tudo += todosOsObjetos;
+
+   console.log(todosOsObjetos.elemento)
+}
+
+
 //3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 
 
 //4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
-=======
->>>>>>> e4b5e0b50355c3e13ba9e3c7d2a6baa3fd3efc2a
