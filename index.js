@@ -58,6 +58,12 @@ console.log(checarAvaliação)
 //Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
 
 const dadosDoUsuário = ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 05e9ad92be2d4a58b9e08ef0f4a788dee0f995ed
 
 
 //6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
