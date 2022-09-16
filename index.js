@@ -76,13 +76,15 @@ const objeto1 = {
    módulo1: "Legislação de Trânsito",
    cargaHorária1: 12,
    avaliação1: true,
-   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"] 
+   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
+   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto2 = {
   módulo2: "Direção Defensiva",
   cargaHorária2: 8,
   avaliação2: true,
+  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
@@ -92,24 +94,25 @@ const objeto3 = {
  avaliação3: true,
  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 
+ dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto4 = {
  módulo4: "Relacionamento Interpessoal",
  cargaHorária4: 6,
  avaliação4: true,
+ dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 
 const todosOsObjetos = []
-console.log(todosOsObjetos)
+
 
 //3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
 
-
-todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4)
+todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4, objeto5)
    
 console.log(todosOsObjetos)
 
