@@ -77,7 +77,6 @@ const objeto1 = {
    cargaHorária1: 12,
    avaliação1: true,
    dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
-   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto2 = {
@@ -85,15 +84,12 @@ const objeto2 = {
   cargaHorária2: 8,
   avaliação2: true,
   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
-  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto3 = {
  módulo3: "Noções de Primeiros Socorros",
  cargaHorária3: 4,
  avaliação3: true,
- dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
-
  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
@@ -102,7 +98,6 @@ const objeto4 = {
  cargaHorária4: 6,
  avaliação4: true,
  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
- dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
@@ -112,7 +107,7 @@ const todosOsObjetos = []
 
 //3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
 
-todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4, objeto5)
+todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4)
    
 console.log(todosOsObjetos)
 
@@ -151,10 +146,6 @@ if(checarAvaliação == true) {
 //idade: 33
 //verificou email?: false
 //projetos: "Projeto de HTML,Projeto de CSS,Projeto React" 
-
-
-
-todosOsObjetos
 
 
 function informaçõesDoCurso (todosOsObjetos) {
