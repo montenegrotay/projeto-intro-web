@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //  SEMANA 1
 //Curso de Reciclagem para Condutores Infratores
 //Informação
@@ -125,9 +124,6 @@ if(checarAvaliação == true) {
    /*Se alguma avaliação for false, o usuário está reprovado*/
 }
 
-
-=======
->>>>>>> c84477cd8d132951dfe5410ad1dd3a5397851a62
 // SEMANA 03
 //1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2,
 //altere a forma que a característica de array dos itens
