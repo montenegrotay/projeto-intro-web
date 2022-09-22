@@ -73,30 +73,30 @@ console.log(`O Módulo 04: ${módulo4.toUpperCase()} \nCarga Horária: ${cargaHo
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 
 const objeto1 = {
-   módulo1: "Legislação de Trânsito",
-   cargaHorária1: 12,
-   avaliação1: true,
+   módulo: "Legislação de Trânsito",
+   cargaHorária: 12,
+   avaliação: true,
    dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
 }
 
 const objeto2 = {
-  módulo2: "Direção Defensiva",
-  cargaHorária2: 8,
-  avaliação2: true,
+  módulo: "Direção Defensiva",
+  cargaHorária: 8,
+  avaliação: true,
   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
 }
 
 const objeto3 = {
- módulo3: "Noções de Primeiros Socorros",
- cargaHorária3: 4,
- avaliação3: true,
+ módulo: "Noções de Primeiros Socorros",
+ cargaHorária: 4,
+ avaliação: true,
  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto4 = {
- módulo4: "Relacionamento Interpessoal",
- cargaHorária4: 6,
- avaliação4: true,
+ módulo: "Relacionamento Interpessoal",
+ cargaHorária: 6,
+ avaliação: true,
  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
 }
 
@@ -147,38 +147,82 @@ if(checarAvaliação == true) {
 //verificou email?: false
 //projetos: "Projeto de HTML,Projeto de CSS,Projeto React" 
 
+console.log("============== EX01 ============")
 
-function informaçõesDoCurso (todosOsObjetos) {
-   for(let elemento of todosOsObjetos) {
-      todosOsObjetos['dadosDoUsuário'] = dadosDoUsuário.join(', ')
+for (i = 0; i <todosOsObjetos.length; i++) {
+   console.log("Módulo: "+ todosOsObjetos[i].módulo.toUpperCase())
+   console.log("Carga Horária: "+todosOsObjetos[i].cargaHorária)
+   console.log("Avaliação: "+todosOsObjetos[i].avaliação)
+   console.log("Dados necessários: "+todosOsObjetos[i].dadosDoUsuário.join(", "))
+}
+
+//2. Ainda no relatório, altere-o para que ele seja criado utilizando laços.
+//Ou seja, você não deve mais imprimir individualmente cada item do relatório.
+//Cada item deve ser exibido a partir de uma iteração do laço.
+//Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+
+//let cars = [
+//   {
+//     "color": "purple",
+//     "type": "minivan",
+//     "registration": new Date('2017-01-03'),
+//     "capacity": 7
+//   },
+//   {
+//     "color": "red",
+//     "type": "station wagon",
+//     "registration": new Date('2018-03-03'),
+//     "capacity": 5
+//   }
+// ];
+ 
+ //ANTES 
+// console.log("color: "+cars[0].color);
+// console.log("type: "+cars[0].type);
+// console.log("registration: "+cars[0].registration);
+// console.log("capacity: "+cars[0].capacity);
+ 
+// console.log("----------------------");
+ 
+// console.log("color: "+cars[1].color);
+// console.log("type: "+cars[1].type);
+// console.log("registration: "+cars[1].registration);
+// console.log("capacity: "+cars[1].capacity);
+ 
+// //DEPOIS
+// for(car of cars){
+//     for (propriedade in car){
+//         console.log(`${propriedade}: ${car[propriedade]}`)
+//     }
+// console.log("----------------------");
+// }
+
+
+//3. Crie uma função que receba como parâmetro um objeto,
+//e devolva a string do relatório com os dados do objeto.
+
+
+for(cronograma of todosOsObjetos) {
+   for (propriedade in cronograma) {
+      console.log(`${propriedade}: ${cronograma[propriedade]}`)
    }
-   
-   return dadosDoUsuário
-   
-}
-informaçõesDoCurso(todosOsObjetos)
-console.log(todosOsObjetos[4].dadosDoUsuário.join(', '))
-//alterando a array dadosDoUsuário para uma String
-
-//2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
-//ANTES 
-//console.log(elementos[0].item);
-
-//DEPOIS
-//FULANO
-//for(elemento in elementos){
-//  console.log(elemento.item);
-//}
-
-
-for(let elemento in todosOsObjetos){
-   tudo += todosOsObjetos;
-
-   console.log(todosOsObjetos.elemento)
+   console.log("----------------------------------------------")
 }
 
 
-//3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+function todosOsCursosDeReciclagem (adicionandoDados) {
+   dadosDoUsuário.push('CPF') //Adicionando mais uma informação a dadosDoUsuário: CPF.
+   console.log(dadosDoUsuário)
+}
+todosOsCursosDeReciclagem (dadosDoUsuário[i])
 
 
-//4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
+//4. Crie uma função que recebe um array de objetos e uma string.
+//Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro.
+//Caso não exista um item,
+//exiba um ALERT indicando que nenhum item foi encontrado
+
+const filtro = todosOsObjetos.filter(function(dados) {
+   return dadosDoUsuário[i] === dadosDoUsuário[CPF] ? console.log("Documento encontrado.") : alert("Item não encontrado.")
+})
