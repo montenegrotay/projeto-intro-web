@@ -222,6 +222,14 @@ todosOsCursosDeReciclagem (dadosDoUsuário[i])
 //Caso não exista um item,
 //exiba um ALERT indicando que nenhum item foi encontrado
 
-const filtro = todosOsObjetos.filter(function(dados) {
-   return dadosDoUsuário[i] === dadosDoUsuário[CPF] ? console.log("Documento encontrado.") : alert("Item não encontrado.")
-})
+function buscandoDados (todosOsObjetos) {
+   if (todosOsObjetos == "Legislação de Trânsito" , "Direção Defensiva", "Noções de Primeiros Socorros" , "Relacionamento Interpessoal") {
+      console.log("Curso Localizado")
+   } else {
+      console.log(alert("Material não encontrado."))
+   }
+ 
+} 
+buscandoDados(todosOsObjetos)
+
+
