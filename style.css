@@ -1,7 +1,274 @@
-head {
-    color: black;
-    background-color: red;
-    font-family: Arial, Helvetica, sans-serif;
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Header */
+.container {
+    display: flex;
+    background-color:rgb(251,204,4);
+    border-radius: 10px 10px;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-1 {
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.item-2 {
+    display: flex;
+    align-items: center;
+}
+
+.item-3 {
+    padding: 10px;
+}
+/* Botão de pesquisa */
+.botao1 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botao Logout */
+.botao2 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Não mexemos no body. */
+body {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+Main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.Descrição {
+    display: flex;
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+}
+
+.descricao-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    text-align: justify;  
+}
+
+.descricao-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 3px 4px 4px 2px rgba(141, 147, 148, 0.7);  
+}
+
+.Informação {
+    display: flex;
+    padding: 30px;   
+}
+
+.Inscrição {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+
+/* Formulário */
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 900px;
+    /* Para ver as bordas do formulário */
+    padding: 2em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+.field{
+    width: 100%;
+    margin: 15px 0; 
+}
+
+.field label {
+    padding-left: 10px;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+
+input[type=text], input[type=email],
+input[type=submit], input[type=address] {
+    width: 500px;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #999;
+    outline: none;
+    font: 1em sans-serif;
+}
+
+input[type=date], input[type=number],
+input[type=tel], select[id=estado] {
+    width: 200px;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #999;
+    outline: none;
+    font: 1em sans-serif;
+}
+
+input[id=txtCEP] {
+    width: 200px;
+    font: 1em sans-serif;
+    border: 1px solid #999;
+}
+
+/* Botão matrícula */
+input.botao3 {
+    margin: 0 auto;
+    display: block;
+    background-color: #ccc;
+    height: 45px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.Conteúdo {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.Módulo {
+    font-family:"Poppins", sans-serif; 
+    background-color: #f4f4f4;
+    border-radius: 10px 10px;
+    box-shadow: 3px 4px 4px 2px rgba(141, 147, 148, 0.7);  
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+
+.Módulo:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.Módulo p {
+    color: #a3a5ae;
+}
+
+.Módulo img {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+#Módulo1 {
+    border-left: 3px solid black;
+}
+
+#Módulo2 {
+    border-left: 3px solid black;
+}
+
+#Módulo3 {
+    border-left: 3px solid black;
+}
+
+#Módulo4 {
+    border-left: 3px solid black;
+}
+
+.Certificado {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    gap: 10px;
+    
+}
+
+.Certificado img {
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.certificado-frente-verso {
+    display: flex;
+    flex-direction: co;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px ;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(251,204,4);
+    border-radius: 10px 10px;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.divisoes {
+    display: flex;
+    padding: 10px;
+    gap:60vh;
+    justify-content: center;
+    background-color: bisque;font-family: sans-serif; 
+}
+
+
+
+
+
+
+
