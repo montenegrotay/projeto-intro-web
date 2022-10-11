@@ -6,133 +6,262 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Instituto Tecnológico Exito </title>
     <link rel="stylesheet" href="./style.css">
-    
 </head>
+
 <body>
     <header>
-        <h1>Instituto Tecnológico Exito</h1>
-     
+        <div class="container">
+            <div class="item-1">
+                <img src="assets/logo_2-removebg-preview.png" alt="Logo do Instituto Tecnológico Exito" width="150" height="100" >
+            </div>
+
+            <div class="item-2">
+                <label for="pesquisa"></label>
+                <input type="text" name="text" id="text" size="60" value="" placeholder="Buscar cursos, módulos e muito mais..">
+                <input type="submit" class="botao1" style="width:100px" value="Pesquisar">
+            </div>
+
+            <div class="item-3">
+                <input type="submit" class="botao2" style="width:100px" value="Logout">
+            </div>
     </header>
 
-    <img src= "assets/exito.jpg" alt="Logotipo">
+    <main> 
+        <div class="divisoes">
+            <div class="item1">Sobre nós</div>
+            <div class="item2">Inscrição</div>
+            <div class="item3">Conteúdo Programático</div>
+            <div class="item4">Certificado</div>
+        </div>
 
-         
-        <section>
-            <a href= "https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> <h2> Informações</h2> </a>
+        <div class="Descrição">
+            <section class="descricao-1">
+                <h1>Curso de Reciclagem para Condutores Infratores</h1>
+                <p></p>
+                <p></p>
+                <p> O Curso de Reciclagem para Condutores Infratores é destinado exclusivamente aos condutores de veículos que estão cumprindo, independentemente do motivo, a penalidade de suspensão do direito do dirigir (suspensão da Carteira Nacional de Habilitação – CNH). </p>
+                <p> Este curso é ofertado exclusivamente na modalidade de ensino a distância (EaD), não existindo assim, aulas presenciais. </p> 
+                <p> - Carga horária do curso: 30 horas-aula;</p>
+                <p> - Período mínimo legal para conclusão do curso: 96 horas (4 dias);</p>
+                <p> - Período de vigência do curso: 45 dias.</p>
+                <p> - Valor investimento: verifique o valor em seu estado; </p>
+                <p> - Formas de pagamento: boleto bancário; cartão de crédito em até 3 vezes pelo PagSeguro, sem juros. </p>
+                <p></p>
+                <p> Disciplinas ofertadas:
+                    <ul>
+                        <li>Legislação de Trânsito - 12 horas/aula</li>
+                        <li>Direção Defensiva - 8 horas/aula</li>
+                        <li>Noções de Primeiros Socorros - 4 horas/aula</li>
+                        <li>Relacionamento Interpessoal - 6 horas/aula</li>
+                    </ul>
+                </p>
+                <p>
+                    Condutores infratores penalizados com o curso de reciclagem, devem agendar na internet, nas autoescolas e nas empresas que oferecem o curso na modalidade de ensino a distância (EAD).
+                    O curso na modalidade de ensino a distância (EAD) é regulamentado pela <a href="https://www.gov.br/infraestrutura/pt-br/assuntos/transito/conteudo-contran/resolucoes/resolucao7302018-1.pdf" target="_blank"> Resolução do CONTRAN nº 730, de 06 de Março de 2018 </a>
+                </p>
+            </section>
 
-            <p>
-                <h3>Curso de Reciclagem para Condutores Infratores</h3>
-                O curso de Reciclagem para Condutores Infratores é aplicado em situações em que é necessário recuperar os preceitos de educação no trânsito e promover a reeducação de condutores infratores.
-                O curso de Reciclagem pode ser feito presencialmente no Detran e nas autoescolas. Também pode ser feito em casa, na modalidade de ensino a distância (EAD). É possível trocar de modalidade de realização do curso. Porém, nestes casos, não há reaproveitamento de carga horária ou de disciplinas.
-            </p>
+            <article class="descricao-2">
+                <img src="assets/depositphotos_24069469-stock-photo-clear-strategic-solution.jpg" alt="Placas de Trânsito" width="500" height="500" >
+            </article>
+        </div>
+
+        <section class="Informação">
+            <p><h1>Canais de Atendimento</h1></p>
+            <div class="informacao-1">
+                <p><h3>Central de Atendimento</h3></p>
+                <p>0800 643 7373 - Atendimento de segunda a sexta, das 8h as 20h.</p>
+
+                <p>(99) 9 9999-9999 | curso_reciclagem@itt.org.br</p>
             
-            <p>
-                A duração é de 30 horas/aula, divididas em 4 disciplinas:
-                <ul>
-                    <li>Legislação de Trânsito - 12 horas/aula</li>
-                    <li>Direção Defensiva - 8 horas/aula</li>
-                    <li>Noções de Primeiros Socorros - 4 horas/aula</li>
-                    <li>Relacionamento Interpessoal - 6 horas/aula</li>
-                </ul>
-            </p>
+            </div>
+
             
-            <p>
-                Condutores infratores penalizados com o curso de reciclagem, devem agendar na internet, nas autoescolas e nas empresas que oferecem o curso na modalidade de ensino a distância (EAD).
-                O curso na modalidade de ensino a distância (EAD) é regulamentado pela <a href="https://www.gov.br/infraestrutura/pt-br/assuntos/transito/conteudo-contran/resolucoes/resolucao7302018-1.pdf" target="_blank"> Resolução do CONTRAN nº 730, de 06 de Março de 2018 </a>
-            </p>
+
+
+
+
 
         </section>
 
+        <section class="Inscrição">
+            <h1> Inscrição</h1>
 
-        <article>
-            <h2> Inscrição/Matrícula</h2>
-
-            <section>
+            <form class= "formulario" action="receber-dados">
+                <div class="field">
+                    <label for="nome"> Nome Completo: </label>
+                    <input type="text" id="nome" name="nome" pattern= "[A-Za-z]+" placeholder="Digite seu nome aqui">
+                </div>
                 
-                <form action="receber-dados"> </form>
+                <div class="field radiobox">
+                    <p> Sexo: </p>
+                    <input type="radio" name="sexo" value="M" checked> Masculino </input><br>
+                    <input type="radio" name="sexo" value="F" > Feminino </input><br>
+                </div>
                 
-                <p>Nome:</p>
-                <label for="nome"> </label>
-                <input type="text" name="nome" id="nome">
-
-                <p>Contato:</p>
-                <label for="fone"> </label>
-                <input type="tel" name="fone" id="fone">
-
-                <p>Sexo:</p>
-                <input type="radio" id="sexo-m" name="sexo" value="Masculino">
-                <label for="sexo-m">Masculino</label><br>
-
-                <input type="radio" id="sexo-f" name="sexo" value="Feminino">
-                <label for="sexo-f">Feminio</label>
-
-                <p>Data de Nascimento:</p>
-                <label for="dtnasc"> Data de Nascimento: </label>
-                <input type="date" name="data" id="data">
-
-                <p>Identidade:</p>
-                <label for="dados"> </label>
-                <input type="text" name="rg" id="rg">
-
-                <p>CPF:</p>
-                <label for="dados"> </label>
-                <input type="text" name="cpf" id="cpf">
-
-                <p>E-mail:</p>
-                <label for="email"> </label>
-                <input type="email" name="email" id="email">
-    
+                <div class="field">
+                    <label for="data de nascimento"> Data de Nascimento: </label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </div>
                 
-                <p><button type="submit"> EFETUAR MATRÍCULA </button></p>
-    
-            </section>
-        </article>
+                <div class="field">
+                    <label for="dados"> Identidade: </label>
+                    <input type="number" name="rg" id="rg" size="30">
+                </div>
 
-        <article>
-            <h2>Conteúdo Programático</h2>
-            <section class="Módulo" id="Módulo 01">
-                <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> <h4> Módulo 01: Legislação de Trânsito</h4> </a>
+                <div class="field">
+                    <label for="dados"> CPF: </label>
+                    <input type="number" name="cpf" id="cpf" size="30"  maxlength="11" placeholder="000.000.000-00">
+                </div>
+                
+                <div class="field">
+                    <label for="telefone">Contato: </label> 
+                    <input type="tel" id="telefone" name="telefone" placeholder="99-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" > <br />
+                </div>
+
+                <div class="field">
+                    <label for="email"> E-mail: </label> 
+                    <input type="email" name="email" id="email" size="60" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="field">
+                    <label for="endereco"> Endereço: </label> 
+                    <input type="address" name="endereco" id="endereco" size="60" placeholder="Digite seu endereço">
+                </div>
+
+                <div class="field">
+                    <label for="cidade"> Cidade: </label> 
+                    <input type="text" name="cidade" id="cidade" size="60" placeholder="Digite sua Cidade">
+                </div>
+
+                <div class="field">
+                    <label for="estado"> Estado: </label> 
+                    <select id="estado" name="estado">
+                        <option value="">Select</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </div>
+
+                <div class="field cep">
+                    <label for="txtCEP">Informe o CEP:</label>
+                    <input type="text" id="txtCEP" name="cep" placeholder="00000-000"><br><br>  
+                </div>
+
+                <p><input type="submit" class="botao3" style="width:200px" value="EFETUAR MATRÍCULA"> </p>
+            </form>
+        </section>
+        
+
+        <div class="Conteúdo">
+            <h1>Conteúdo Programático</h1>
+
+            <div class="Módulo" id="Módulo1">
+                <h3>Módulo 01</h3>
+                <h4>Legislação de Trânsito</h4>
+                <p>
+                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank">  </a>
+                    <ul>
+                        <li>Carga Horária: 12h/a</li>
+                        <li>Avaliação: 10 questões</li>
+                        <li>Para validação é necessário 70% de pontuação.</li>
+                    </ul>
+                </p>
+                <img src="assets/placas.jpg" alt="Placa de Trânsito"  width="160" height="160">
+            </div>
+
+            <div class="Módulo" id="Módulo2">
+                <h3>Módulo 02</h3>
+                <h4>Direção Defensiva</h4>
+                <p>
+                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> </a>
+                    <ul>
+                        <li>Carga Horária: 8h/a</li>
+                        <li>Avaliação: 10 questões</li>
+                        <li>Para validação é necessário 70% de pontuação.</li>
+                    </ul>
+                </p>
+                <img src="assets/Direção defensiva.jpg" alt="Direção Defensiva" width="160" height="160">
+            </div>
+
+            <div class="Módulo" id="Módulo3">
+                <h3>Módulo 03</h3>
+                <h4>Noções de Primeiros Socorros</h4>
+                <p>
+                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank">  </a>
+                    <ul>
+                        <li>Carga Horária: 4h/a</li>
+                        <li>Avaliação: 10 questões</li>
+                        <li>Para validação é necessário 70% de pontuação.</li>
+                    </ul>  
+                </p>
+                <img src="assets/primeiros socorros.jpg" alt="Noções de Primeiros Socorros" width="160" height="160">
+            </div>
+
+            <div class="Módulo" id="Módulo4">
+                <h3>Módulo 04</h3>
+                <h4>Relacionamento Interpessoal</h4>
+                <p>
+                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> </a>
+                    <ul>
+                        <li>Carga Horária: 6h/a</li>
+                        <li>Avaliação: 10 questões</li>
+                        <li>Para validação é necessário 70% de pontuação.</li>
+                    </ul>
+                </p>
+                <img src="assets/relacionamento interpessoal.jpg" alt="Relacionamento Interpessoal" width="160" height="160">
+            </div>
+        </div>
+
+        <section class="Certificado">
+            <div class="certificado-inicio">
+                <h1>Certificado</h1>
+                <p></p>
+                <p>Todos os cursos oferecidos pelo portal de Ensino Online da Exito do Brasil (contidos neste site www.exito.com.br, contam com a opção de certificado de conclusão válido em todo o Brasil. Porém, você só poderá solicitar o certificado de conclusão se fizer a leitura do curso, e obter 50% de aproveitamento na prova de suficiência. (Nota igual ou superior a 5,0).</p>
+                <p><b>Nota:</b> O sistema só libera a opção para emitir o certificado de conclusão de curso, após o aluno comprovar seus conhecimentos obtendo 50% de aproveitamento na prova de suficiência. </p>
+            </div>
             
-            </section>
-
-            <section class="Módulo" id="Módulo 02">
-                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> <h4> Módulo 02: Direção Defensiva</h4> </a>
-              
-            </section>
-
-            <section class="Módulo" id="Módulo 03">
-                <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> <h4> Módulo 03: Noções de Primeiros Socorros </h4> </a>
-               
-            </section>
-
-            <section class="Módulo" id="Módulo 04">
-                <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> <h4> Módulo 04: Relacionamento Interpessoal </h4> </a>
+            <div class="certificado-frente-verso">
+                <img src= "assets/1.jpg" alt="Certificado-frente" width="700" height="400">
                 
-            </section>
-
-        </article>
-
-        <article>
-            <h2>Certificado</h2>
-
-            <img src= "assets/1.jpg" alt="Certificado-frente">
-            <img src= "assets/2.jpg" alt="Certificado-frente">
-
-
-
-        </article>
-
-    
+                <img src= "assets/2.jpg" alt="Certificado-frente" width="700" height="400">
+                
+            </div>
+        </section>
     </main>
 
-    
     <footer> 
-        Taynara Montenegro
+        <p>Siga a Exito nas redes sociais </p>
         <a href="https://www.instagram.com/eu.universodatay/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" target="_blank"></a>
         <a href="https://www.linkedin.com/in/taynaramontenegro/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" target="_blank"></a> 
         <a href="mailto:contato@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail--v1.png" target="_blank"></a>
         <a href="https://github.com/montenegrotay"><img src="https://img.icons8.com/ios/50/000000/github--v1.png" target="_blanck"></a>
-    </footer>
-    
+    </footer>   
 </body>
 </html>
