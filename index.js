@@ -57,7 +57,7 @@ console.log(checarAvaliação)
 //5. Crie pelo menos mais uma característica para o item que você criou. 
 //Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
 
-const dadosDoUsuário = ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
+const dadosDoUsuário = ["Nome do Aluno", "Email", "Data de Nascimento"]
 
 
 //6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
@@ -76,28 +76,28 @@ const objeto1 = {
    módulo: "Legislação de Trânsito",
    cargaHorária: 12,
    avaliação: true,
-   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
+   dadosDoUsuário: ["Nome do Aluno", "Email", "Data de Nascimento"],
 }
 
 const objeto2 = {
   módulo: "Direção Defensiva",
   cargaHorária: 8,
   avaliação: true,
-  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
+  dadosDoUsuário: ["Nome do Aluno", "Email", "Data de Nascimento"],
 }
 
 const objeto3 = {
  módulo: "Noções de Primeiros Socorros",
  cargaHorária: 4,
  avaliação: true,
- dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
+ dadosDoUsuário: ["Nome do Aluno", "Email", "Data de Nascimento"]
 }
 
 const objeto4 = {
  módulo: "Relacionamento Interpessoal",
  cargaHorária: 6,
  avaliação: true,
- dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"],
+ dadosDoUsuário: ["Nome do Aluno", "Email", "Data de Nascimento"],
 }
 
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
@@ -222,14 +222,14 @@ todosOsCursosDeReciclagem (dadosDoUsuário[i])
 //Caso não exista um item,
 //exiba um ALERT indicando que nenhum item foi encontrado
 
-function buscandoDados (todosOsObjetos) {
-   if (todosOsObjetos == "Legislação de Trânsito" , "Direção Defensiva", "Noções de Primeiros Socorros" , "Relacionamento Interpessoal") {
-      console.log("Curso Localizado")
-   } else {
-      console.log(alert("Material não encontrado."))
-   }
- 
-} 
-buscandoDados(todosOsObjetos)
+const buscaTotal = (todosOsObjetos, string) => {
+   const pesquisa = todosOsObjetos.filter((objeto) => {
+   return objeto1.módulo === String || objeto1.cargaHorária === Number || objeto1.avaliação === String
+})
 
-
+if (pesquisa.value.length > 0) {
+   console.log(pesquisa)
+} else {
+   aler("Pesquisa não encontrada.")
+}
+}

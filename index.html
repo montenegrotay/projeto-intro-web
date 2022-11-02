@@ -4,264 +4,397 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title> Instituto Tecnológico Exito </title>
+    <script src="index.js" defer></script>
+    <script src="script" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="item-1">
-                <img src="assets/logo_2-removebg-preview.png" alt="Logo do Instituto Tecnológico Exito" width="150" height="100" >
+        <header>
+            <div class="header" id="header">
+                <button onclick="toggleButtonAnimation()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <div class="logo_header">
+                    <img src="assets/logo sem fundo.png" class="img_logo_header" alt="Logo Exito" width="250">
+                </div>
+                <div class="navigation_header" id="navigation_header">
+                    <button class="btn_icon_header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                    <a href="#content">HOME</a>
+                    <a href="#conteudo">CURSOS</a>
+                    <a href="#content-2"> INSCRIÇÃO</a>
+                    <a href="#contato">CERTIFICADO</a>
+                </div>
             </div>
+        </header>
 
-            <div class="item-2">
-                <label for="pesquisa"></label>
-                <input type="text" name="text" id="text" size="60" value="" placeholder="Buscar cursos, módulos e muito mais..">
-                <input type="submit" class="botao1" style="width:100px" value="Pesquisar">
+    <nav>
+        <section class="content">
+            <div  tabindex="0" onclick="closeButtonAnimation()" class="content" id="content">
+                <p><h1>Instituto Tecnológico Exito</h1></p>
+                
+                <img src="assets/Reciclagem para Condutores Infratores.png" alt="Chamada para o curso" >
+                
             </div>
-
-            <div class="item-3">
-                <input type="submit" class="botao2" style="width:100px" value="Logout">
-            </div>
-    </header>
-
-    <main> 
-        <div class="divisoes">
-            <div class="item1">Sobre nós</div>
-            <div class="item2">Inscrição</div>
-            <div class="item3">Conteúdo Programático</div>
-            <div class="item4">Certificado</div>
-        </div>
-
-        <div class="Descrição">
-            <section class="descricao-1">
-                <h1>Curso de Reciclagem para Condutores Infratores</h1>
-                <p></p>
-                <p></p>
-                <p> O Curso de Reciclagem para Condutores Infratores é destinado exclusivamente aos condutores de veículos que estão cumprindo, independentemente do motivo, a penalidade de suspensão do direito do dirigir (suspensão da Carteira Nacional de Habilitação – CNH). </p>
-                <p> Este curso é ofertado exclusivamente na modalidade de ensino a distância (EaD), não existindo assim, aulas presenciais. </p> 
-                <p> - Carga horária do curso: 30 horas-aula;</p>
-                <p> - Período mínimo legal para conclusão do curso: 96 horas (4 dias);</p>
-                <p> - Período de vigência do curso: 45 dias.</p>
-                <p> - Valor investimento: verifique o valor em seu estado; </p>
-                <p> - Formas de pagamento: boleto bancário; cartão de crédito em até 3 vezes pelo PagSeguro, sem juros. </p>
-                <p></p>
-                <p> Disciplinas ofertadas:
-                    <ul>
-                        <li>Legislação de Trânsito - 12 horas/aula</li>
-                        <li>Direção Defensiva - 8 horas/aula</li>
-                        <li>Noções de Primeiros Socorros - 4 horas/aula</li>
-                        <li>Relacionamento Interpessoal - 6 horas/aula</li>
-                    </ul>
-                </p>
-                <p>
-                    Condutores infratores penalizados com o curso de reciclagem, devem agendar na internet, nas autoescolas e nas empresas que oferecem o curso na modalidade de ensino a distância (EAD).
-                    O curso na modalidade de ensino a distância (EAD) é regulamentado pela <a href="https://www.gov.br/infraestrutura/pt-br/assuntos/transito/conteudo-contran/resolucoes/resolucao7302018-1.pdf" target="_blank"> Resolução do CONTRAN nº 730, de 06 de Março de 2018 </a>
-                </p>
-            </section>
-
-            <article class="descricao-2">
-                <img src="assets/depositphotos_24069469-stock-photo-clear-strategic-solution.jpg" alt="Placas de Trânsito" width="500" height="500" >
-            </article>
-        </div>
-
-        <section class="Informação">
-            <p><h1>Canais de Atendimento</h1></p>
-            <div class="informacao-1">
-                <p><h3>Central de Atendimento</h3></p>
-                <p>0800 643 7373 - Atendimento de segunda a sexta, das 8h as 20h.</p>
-
-                <p>(99) 9 9999-9999 | curso_reciclagem@itt.org.br</p>
-            
-            </div>
-
-            
-
-
-
-
-
         </section>
-
-        <section class="Inscrição">
-            <h1> Inscrição</h1>
-
-            <form class= "formulario" action="receber-dados">
-                <div class="field">
-                    <label for="nome"> Nome Completo: </label>
-                    <input type="text" id="nome" name="nome" pattern= "[A-Za-z]+" placeholder="Digite seu nome aqui">
-                </div>
-                
-                <div class="field radiobox">
-                    <p> Sexo: </p>
-                    <input type="radio" name="sexo" value="M" checked> Masculino </input><br>
-                    <input type="radio" name="sexo" value="F" > Feminino </input><br>
-                </div>
-                
-                <div class="field">
-                    <label for="data de nascimento"> Data de Nascimento: </label>
-                    <input type="date" name="nascimento" id="nascimento">
-                </div>
-                
-                <div class="field">
-                    <label for="dados"> Identidade: </label>
-                    <input type="number" name="rg" id="rg" size="30">
-                </div>
-
-                <div class="field">
-                    <label for="dados"> CPF: </label>
-                    <input type="number" name="cpf" id="cpf" size="30"  maxlength="11" placeholder="000.000.000-00">
-                </div>
-                
-                <div class="field">
-                    <label for="telefone">Contato: </label> 
-                    <input type="tel" id="telefone" name="telefone" placeholder="99-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" > <br />
-                </div>
-
-                <div class="field">
-                    <label for="email"> E-mail: </label> 
-                    <input type="email" name="email" id="email" size="60" placeholder="Digite seu e-mail">
-                </div>
-
-                <div class="field">
-                    <label for="endereco"> Endereço: </label> 
-                    <input type="address" name="endereco" id="endereco" size="60" placeholder="Digite seu endereço">
-                </div>
-
-                <div class="field">
-                    <label for="cidade"> Cidade: </label> 
-                    <input type="text" name="cidade" id="cidade" size="60" placeholder="Digite sua Cidade">
-                </div>
-
-                <div class="field">
-                    <label for="estado"> Estado: </label> 
-                    <select id="estado" name="estado">
-                        <option value="">Select</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                        <option value="EX">Estrangeiro</option>
-                    </select>
-                </div>
-
-                <div class="field cep">
-                    <label for="txtCEP">Informe o CEP:</label>
-                    <input type="text" id="txtCEP" name="cep" placeholder="00000-000"><br><br>  
-                </div>
-
-                <p><input type="submit" class="botao3" style="width:200px" value="EFETUAR MATRÍCULA"> </p>
-            </form>
+       
+        <section>
+            <div class="search-box">
+                <input onkeypress="valorDoInput()" value="" type="text" class="search-text" id="searchbar" name="search" placeholder="Buscar..">
+               
+                <button onclick="capturaValores()"  class="search-btn">
+                    <a heref="#">
+                        <img src="assets/3844467-magnifier-search-zoom_110341.svg" alt="lupa" width="20" height="30">
+                    </a>
+                </button>
+            </div>
         </section>
+    </nav>
+
+    <main>
+            
+    
+    
         
+         
 
-        <div class="Conteúdo">
-            <h1>Conteúdo Programático</h1>
 
-            <div class="Módulo" id="Módulo1">
-                <h3>Módulo 01</h3>
-                <h4>Legislação de Trânsito</h4>
-                <p>
-                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank">  </a>
-                    <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section>
+            <div class="descricao" id="descricao">
+                <h1>Curso de Reciclagem para Condutores Infratores</h1>
+               
+                <p class="p1"> O Curso de Reciclagem para Condutores Infratores é destinado exclusivamente aos condutores de veículos que estão cumprindo, independentemente do motivo, a penalidade de suspensão do direito do dirigir (suspensão da Carteira Nacional de Habilitação – CNH).
+                Este curso é ofertado exclusivamente na modalidade de ensino a distância (EaD), não existindo assim, aulas presenciais. 
+                Carga horária do curso: 30 horas-aula;
+                Período mínimo legal para conclusão do curso: 96 horas (4 dias);
+                Período de vigência do curso: 45 dias.
+                Valor investimento: verifique o valor em seu estado; 
+                Formas de pagamento: boleto bancário; cartão de crédito em até 3 vezes pelo PagSeguro, sem juros. 
+                
+                <p class="p2">Disciplinas ofertadas:
+                    <li>Legislação de Trânsito - 12 horas/aula</li>
+                    <li>Direção Defensiva - 8 horas/aula</li>
+                    <li>Noções de Primeiros Socorros - 4 horas/aula</li>
+                    <li>Relacionamento Interpessoal - 6 horas/aula</li>
+                </p>
+
+                <p class="p3">
+                    Condutores infratores penalizados com o curso de reciclagem, devem agendar na internet, nas autoescolas e nas empresas que oferecem o curso na modalidade de ensino a distância (EAD).
+                    O curso na modalidade de ensino a distância (EAD) é regulamentado pela <a class="link-descricao" href="https://www.gov.br/infraestrutura/pt-br/assuntos/transito/conteudo-contran/resolucoes/resolucao7302018-1.pdf" target="_blank"> Resolução do CONTRAN nº 730, de 06 de Março de 2018 </a>
+                </p>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="content-2" id="content-2">
+                <h1> Inscrição </h1>
+                <form>
+                    <div>
+                        <label for="text">Nome: </label> 
+                        <input type="text" placeholder="Digite seu nome" class="inputs" >
+                       
+                    </div>
+    
+                    <div>
+                        <label for="telefone">Contato: </label> 
+                        <input class="inputs" type="tel" id="telefone" name="telefone" placeholder="99-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" > <br />
+                    </div>
+    
+                    <div>
+                        <label for="email">Email: </label> 
+                        <input type="email" placeholder="Digite seu email" class="inputs" >
+                    </div>
+    
+                    <p> Sexo: </p>
+                    <div class="box-select">
+                        <input type="radio" id="m" name="sexo" value="m" >
+                        <label for="m"> Masculino</label>
+                        
+                        <input type="radio" name="sexo" value="f">
+                        <label for="m"> Feminino</label>
+    
+                        <input type="radio" id="m" name="sexo" value="o" >
+                        <label for="o"> Outro</label>
+                    </div>
+    
+                    <div>
+                        <label for="data de nascimento"> Data de Nascimento: </label>
+                        <input class="inputs" type="date" name="nascimento" id="nascimento" >
+                    </div>
+    
+                    <div>
+                        <label for="dados"> Identidade: </label>
+                        <input class="inputs" type="number" name="rg" id="rg" size="30" placeholder="Insira seu número de identidade">
+                    </div>
+    
+                    <div>
+                        <label for="dados"> CPF: </label>
+                        <input class="inputs" type="number" name="cpf" id="cpf" size="30"  maxlength="11" placeholder="000.000.000-00">
+                    </div>
+    
+                    <div>
+                        <label for="endereco"> Endereço: </label> 
+                        <input class="inputs" type="address" name="endereco" id="endereco" size="60" placeholder="Digite seu endereço">
+                    </div>
+    
+                    <div>
+                        <label for="cidade"> Cidade: </label> 
+                        <input class="inputs" type="text" id="cidade" id="cidade" size="60" placeholder="Digite sua Cidade">
+                    </div>
+    
+                    <div>
+                        <label for="estado"> Estado: </label> 
+                        <select class="inputs" id="estado" name="estado">
+                            <option value="">Select</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="txtCEP">Informe o CEP:</label>
+                        <input class="inputs" type="text" id="txtCEP" name="cep" placeholder="00000-000"><br><br>  
+                    </div>
+    
+                    <div>
+                        <label for="number">Senha:</label>
+                        <input class="inputs" type="password" placeholder="Senha" >
+                    </div>
+    
+                    <div>
+                        <label for="number">Confirme sua senha:</label>
+                        <input class="inputs" type="password" placeholder="Repita a sua senha" >
+                    </div>
+    
+                    <button onclick="mensagem()" type="submit">EFETUAR MATRÍCULA </button>
+    
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section>
+            <div class="titulo">
+                <h1><p>Conteúdo Programático</p></h1>
+            </div>
+    
+            <div class="conteudo" id="conteudo">
+                <div class="modulo" id="modulo1">
+                    <h3>Módulo 01</h3>
+                    <h4>Legislação de Trânsito</h4>
+                    <p>
+                        <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank">  </a>
                         <li>Carga Horária: 12h/a</li>
                         <li>Avaliação: 10 questões</li>
                         <li>Para validação é necessário 70% de pontuação.</li>
-                    </ul>
-                </p>
-                <img src="assets/placas.jpg" alt="Placa de Trânsito"  width="160" height="160">
-            </div>
-
-            <div class="Módulo" id="Módulo2">
-                <h3>Módulo 02</h3>
-                <h4>Direção Defensiva</h4>
-                <p>
-                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> </a>
-                    <ul>
+                    </p>
+                    <img src="assets/placas.jpg" alt="Placa de Trânsito"  width="160" height="160">
+                </div>
+    
+                <div class="modulo" id="modulo2">
+                    <h3>Módulo 02</h3>
+                    <h4>Direção Defensiva</h4>
+                    <p>
+                        <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> </a>
                         <li>Carga Horária: 8h/a</li>
                         <li>Avaliação: 10 questões</li>
                         <li>Para validação é necessário 70% de pontuação.</li>
-                    </ul>
-                </p>
-                <img src="assets/Direção defensiva.jpg" alt="Direção Defensiva" width="160" height="160">
-            </div>
-
-            <div class="Módulo" id="Módulo3">
-                <h3>Módulo 03</h3>
-                <h4>Noções de Primeiros Socorros</h4>
-                <p>
-                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank">  </a>
-                    <ul>
+                    </p>
+                    <img src="assets/Direção defensiva.jpg" alt="Direção Defensiva" width="160" height="160">
+                </div>
+    
+                <div class="modulo" id="modulo3">
+                    <h3>Módulo 03</h3>
+                    <h4>Noções de Primeiros Socorros</h4>
+                    <p>
+                        <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank">  </a>
+                        
                         <li>Carga Horária: 4h/a</li>
                         <li>Avaliação: 10 questões</li>
                         <li>Para validação é necessário 70% de pontuação.</li>
-                    </ul>  
-                </p>
-                <img src="assets/primeiros socorros.jpg" alt="Noções de Primeiros Socorros" width="160" height="160">
-            </div>
-
-            <div class="Módulo" id="Módulo4">
-                <h3>Módulo 04</h3>
-                <h4>Relacionamento Interpessoal</h4>
-                <p>
-                    <a href="https://www.itt.org.br/reciclagem-para-condutores-infratores/" target="_blank"> </a>
-                    <ul>
+                         
+                    </p>
+                    <img src="assets/primeiros socorros.jpg" alt="Noções de Primeiros Socorros" width="160" height="160">
+                </div>
+    
+                <div class="modulo" id="modulo4">
+                    <h3>Módulo 04</h3>
+                    <h4>Relacionamento Interpessoal</h4>
+                    <p>
                         <li>Carga Horária: 6h/a</li>
                         <li>Avaliação: 10 questões</li>
                         <li>Para validação é necessário 70% de pontuação.</li>
-                    </ul>
-                </p>
-                <img src="assets/relacionamento interpessoal.jpg" alt="Relacionamento Interpessoal" width="160" height="160">
+                        
+                    </p>
+                    <img src="assets/relacionamento interpessoal.jpg" alt="Relacionamento Interpessoal" width="160" height="160">
+                </div>
+    
+                <div class="modulo" id="instrutor">
+                    <h3>Instrutor de Trânsito</h3>
+                    <p> Em breve </p>
+                    
+                </div>
+    
+                <div class="modulo" id="diretor-ensino">
+                    <h3>Diretor de Ensino</h3>
+                    <p> Em breve </p>
+                </div>
+    
+                <div class="modulo" id="diretor-geral">
+                    <h3>Diretor Geral</h3>
+                    <p> Em breve </p>
+                </div>
+    
+                <div class="modulo" id="examinador">
+                    <h3>Examinador</h3>
+                    <p> Em breve </p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <section class="Certificado">
-            <div class="certificado-inicio">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="certificado">
                 <h1>Certificado</h1>
-                <p></p>
-                <p>Todos os cursos oferecidos pelo portal de Ensino Online da Exito do Brasil (contidos neste site www.exito.com.br, contam com a opção de certificado de conclusão válido em todo o Brasil. Porém, você só poderá solicitar o certificado de conclusão se fizer a leitura do curso, e obter 50% de aproveitamento na prova de suficiência. (Nota igual ou superior a 5,0).</p>
-                <p><b>Nota:</b> O sistema só libera a opção para emitir o certificado de conclusão de curso, após o aluno comprovar seus conhecimentos obtendo 50% de aproveitamento na prova de suficiência. </p>
-            </div>
-            
-            <div class="certificado-frente-verso">
-                <img src= "assets/1.jpg" alt="Certificado-frente" width="700" height="400">
-                
-                <img src= "assets/2.jpg" alt="Certificado-frente" width="700" height="400">
-                
-            </div>
+
+                <p class="p4">
+                    Todos os cursos oferecidos pelo portal de Ensino Online da Exito do Brasil (contidos neste site www.exito.com.br, contam com a opção de certificado de conclusão válido em todo o Brasil. Porém, você só poderá solicitar o certificado de conclusão se fizer a leitura do curso, e obter 50% de aproveitamento na prova de suficiência. (Nota igual ou superior a 5,0). 
+                </p>
+                <p class="p5">
+                    O sistema só libera a opção para emitir o certificado de conclusão de curso, após o aluno comprovar seus conhecimentos obtendo 50% de aproveitamento na prova de suficiência. </p>
+                </p>
+
+                <img src= "assets/1.jpg" alt="Certificado-frente" >
         </section>
     </main>
 
-    <footer> 
-        <p>Siga a Exito nas redes sociais </p>
+    <footer class="contato" id="contato"> 
+        <p>Feito por Taynara Montenegro </p>
+        <a href=""> <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Central de Atendimento"  width="45" />
         <a href="https://www.instagram.com/eu.universodatay/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" target="_blank"></a>
         <a href="https://www.linkedin.com/in/taynaramontenegro/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" target="_blank"></a> 
         <a href="mailto:contato@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail--v1.png" target="_blank"></a>
-        <a href="https://github.com/montenegrotay"><img src="https://img.icons8.com/ios/50/000000/github--v1.png" target="_blanck"></a>
+        <a href="https://github.com/montenegrotay"><img src="https://img.icons8.com/color/48/000000/github--v1.png" target="_blanck"></a>
+        <a href=""> <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" target="_blanck" alt="Contato via Whatsapp" width="50"></a>
     </footer>   
 </body>
+
+<script>
+    var header = document.getElementById("header");
+    var navigationHeader = document.getElementById("navigation_header")
+    var content = document.getElementById("content")
+    var showButtonAnimation = false;
+
+    function toggleButtonAnimation () {
+        showButtonAnimation = !showButtonAnimation;
+        if(showButtonAnimation) {
+            //true
+            navigationHeader.style.marginLeft = "-10vw"
+            navigationHeader.style.animationName = "showButtonAnimation"
+            content.style.filter = "blur(2px)";
+
+        } else {
+            //false
+            navigationHeader.style.marginLeft = "-100vw"
+            navigationHeader.style.marginLeft = ""
+            content.style.filter = "";
+        }
+    }
+
+    function closeButtonAnimation () {
+        if(showButtonAnimation) {
+            toggleButtonAnimation();
+        }
+    }
+
+    window.addEventListener("resize", function(event){
+        if(window.innerWidth > 768 && showButtonAnimation) {
+            toggleButtonAnimation();
+        }
+    })
+</script>
+
 </html>
