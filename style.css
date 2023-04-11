@@ -23,6 +23,7 @@ body {
     font-size: 16px;
     background-color: var(--color-dark1);
     color: var(--color-white); 
+    min-height: 100vh;
    
 }
 
@@ -69,30 +70,27 @@ body ::selection{
 }
 
 .active{
-    background-color: var(--color-orange);
+    background-color: var(--color-white);
     padding: 10px;
     border-radius: 10px;
 }
 
 .content{
-    padding-top: 2em;
     text-align: center;
-    height: 300vh;
+    width: 100%;
     transition: 1s;
     font-size: 2.5rem;
     font-variant: small-caps;
 }
 
-nav{
-    background-color: #ff221c;
-    height: 100vh;
-   
+.content h1{
+    height: 10vh;
+    padding: 10vh;
 }
 
 nav img{
     width: 100%;
 }
-
 
 
 .btn_icon_header{
@@ -130,36 +128,25 @@ nav img{
 
 
 
-
-
-/* Opções embaixo da barra de pesquisa */
-
-
-
-
-
-
-
 /* Barra de pesquisa */
 
-
+/*
 .search-box{
-    position: absolute;
-    top: 100%;
-    left: 50%;
+    margin-left: 70vh;
     transform: translate(-50%, -50%);
     background: var(--color-white);
-    height: 6%;
-    padding: 10px;
+    width: 60vh;
+    padding: 0.1px;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    max-width: 600px;
+    align-self: center;
+    
     font-size: 16px;
 }
 
+/*
 .search-text{
     border: none;
     background: none;
@@ -168,19 +155,53 @@ nav img{
     color: black;
     font-size: 16px;
     line-height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-btn{
     width: 9%;
     max-width: 70%;
-    height: 140%;
+    
     border-radius: 50%;
-    background-color: var(--color-orange);
+    background-color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+*/
 
+.search-box{
+    display: flex;
+    border: 1px solid whitesmoke;
+    border-radius: 1em;
+    padding: 0.3em;
+    width: 80vh;
+    height: 6vh;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.search-text {
+    font-size: 1.3em;
+    border-radius: 0.3em;
+    border: none;
+    padding: 0.2em;
+    width: 80vh;
+}
+
+.search-box button[type="submit"]{
+    padding: 0.2rem;
+    font-size: 1rem;
+    height: 35px;
+    border-radius: 6px;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
 
 
 
@@ -192,15 +213,12 @@ nav img{
 
 
 /* Descrição do curso */
-
 .descricao{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    flex-grow: 1;
     background-color: var(--color-dark2);
     padding: 5rem;
-    gap: 1rem;
     border-radius: 10px;
     border: 10px;
     border: 30px solid var(--color-dark1);
@@ -226,28 +244,6 @@ a.link-descricao{
 .p1, .p2, .p3 {
     text-align: justify;
 }
-
-
-
-
-
-/* Informação de Contato */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Formulário de Inscrição */
@@ -279,8 +275,6 @@ a.link-descricao{
     font-size: 3rem;
     margin: 15px 0 15px 0;
     font-variant: small-caps;
-    
-
 }
 
 .content-2 h1{
@@ -317,6 +311,7 @@ a.link-descricao{
     gap: 1rem;
 }
 
+
 button[type="submit"]{
     padding: 1rem;
     font-size: 1rem;
@@ -331,7 +326,7 @@ button[type="submit"]{
 }
 
 button[type="submit"]:hover{
-    background-color: var(--color-red1);
+    background-color: var(--color-orange);
 }
 
 @media screen and (max-width: 576px) {
@@ -340,20 +335,6 @@ button[type="submit"]:hover{
         gap: 5px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Conteúdo Programático */
@@ -367,6 +348,7 @@ button[type="submit"]:hover{
     flex-wrap: wrap;
     gap: 40px;
     width: 100%;
+    height: 600px;
 } 
 
 .titulo h1{
@@ -451,25 +433,11 @@ button[type="submit"]:hover{
 }
 
 
-/*
-html{
-    scroll-behavior: smooth;
-
-}
-*/
-
-
-
-
-
-
 /* Certificado */
 .certificado h1{
     font-size: 3rem;
     margin: 15px 0 15px 0;
     font-variant: small-caps;
-
-    
 }
 
 .certificado {
@@ -496,24 +464,8 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    max-width: 680px;
+    max-width: 580px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer */
@@ -525,9 +477,9 @@ footer {
     height: 90%;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 2vh;
 }
-
 
 
 @media (max-width: 768px) {

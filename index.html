@@ -7,8 +7,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title> Instituto Tecnológico Exito </title>
-    <script src="index.js" defer></script>
-    <script src="script" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -32,7 +31,7 @@
                     <a href="#content">HOME</a>
                     <a href="#conteudo">CURSOS</a>
                     <a href="#content-2"> INSCRIÇÃO</a>
-                    <a href="#contato">CERTIFICADO</a>
+                    <a href="#certificado">CERTIFICADO</a>
                 </div>
             </div>
         </header>
@@ -42,48 +41,23 @@
             <div  tabindex="0" onclick="closeButtonAnimation()" class="content" id="content">
                 <p><h1>Instituto Tecnológico Exito</h1></p>
                 
-                <img src="assets/Reciclagem para Condutores Infratores.png" alt="Chamada para o curso" >
+                <img src="assets/curso de reciclagem para condutores infratores.png" alt="Chamada para o curso"  >
                 
-            </div>
-        </section>
-       
-        <section>
-            <div class="search-box">
-                <input onkeypress="valorDoInput()" value="" type="text" class="search-text" id="searchbar" name="search" placeholder="Buscar..">
-               
-                <button onclick="capturaValores()"  class="search-btn">
-                    <a heref="#">
-                        <img src="assets/3844467-magnifier-search-zoom_110341.svg" alt="lupa" width="20" height="30">
-                    </a>
-                </button>
             </div>
         </section>
     </nav>
 
-    <main>
+    <main class="principal">
+        <div class="search-box">
+            <input value="" type="text" class="search-text" id="searchbar" name="search" placeholder="Buscar..">
+               
+            <button onclick="cursoReciclagem()" type="submit" class="search-btn" id="search-btn" >
+                <a heref="#">
+                    <img src="assets/3844467-magnifier-search-zoom_110341.svg" alt="lupa" width="20" height="20">
+                </a>
+            </button>
+        </div>
             
-    
-    
-        
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section>
             <div class="descricao" id="descricao">
                 <h1>Curso de Reciclagem para Condutores Infratores</h1>
@@ -110,7 +84,6 @@
             </div>
         </section>
 
-
         <section>
             <div class="content-2" id="content-2">
                 <h1> Inscrição </h1>
@@ -118,7 +91,7 @@
                     <div>
                         <label for="text">Nome: </label> 
                         <input type="text" placeholder="Digite seu nome" class="inputs" >
-                       
+
                     </div>
     
                     <div>
@@ -133,13 +106,13 @@
     
                     <p> Sexo: </p>
                     <div class="box-select">
-                        <input type="radio" id="m" name="sexo" value="m" >
+                        <input type="radio" name="sexo" value="m" >
                         <label for="m"> Masculino</label>
                         
                         <input type="radio" name="sexo" value="f">
-                        <label for="m"> Feminino</label>
+                        <label for="f"> Feminino</label>
     
-                        <input type="radio" id="m" name="sexo" value="o" >
+                        <input type="radio" name="sexo" value="o" >
                         <label for="o"> Outro</label>
                     </div>
     
@@ -224,23 +197,6 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section>
             <div class="titulo">
                 <h1><p>Conteúdo Programático</p></h1>
@@ -320,24 +276,7 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="certificado">
+        <section class="certificado" id="certificado">
                 <h1>Certificado</h1>
 
                 <p class="p4">
@@ -353,10 +292,9 @@
 
     <footer class="contato" id="contato"> 
         <p>Feito por Taynara Montenegro </p>
-        <a href=""> <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Central de Atendimento"  width="45" />
+      
         <a href="https://www.instagram.com/eu.universodatay/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" target="_blank"></a>
         <a href="https://www.linkedin.com/in/taynaramontenegro/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" target="_blank"></a> 
-        <a href="mailto:contato@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail--v1.png" target="_blank"></a>
         <a href="https://github.com/montenegrotay"><img src="https://img.icons8.com/color/48/000000/github--v1.png" target="_blanck"></a>
         <a href=""> <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" target="_blanck" alt="Contato via Whatsapp" width="50"></a>
     </footer>   
@@ -396,5 +334,4 @@
         }
     })
 </script>
-
 </html>

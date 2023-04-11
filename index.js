@@ -233,3 +233,15 @@ if (pesquisa.value.length > 0) {
    aler("Pesquisa não encontrada.")
 }
 }
+
+
+const capturaValores = () => {
+   const busca = document.getElementById("search-btn")
+   console.log(busca.value)
+   busca.value=""
+}
+
+const valorDoInput = () => {
+   const respostaDoInput = document.getElementById("#searchbar")
+   console.log(respostaDoInput.value)
+}
